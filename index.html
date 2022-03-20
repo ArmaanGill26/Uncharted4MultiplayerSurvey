@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Uncharted 4 Multiplayer Survey</title>
+        <style>
+            html {
+                height: 1500px;
+                background-image: url("https://bit.ly/3NflTIH");
+                background-repeat: no-repeat;
+            }
+
+            body {
+                height: 1440px;
+                width: 940px;
+                margin: 0;
+                padding: 30px;
+                background-color: rgba(0, 0, 0, 0.5);
+                font-family: sans-serif;
+                color: white;
+            }
+
+            #title {
+                color: white;
+                text-align: center;
+            }
+
+            #description {
+                color: white;
+                font-size: 22px;
+                text-align: center;
+            }   
+
+            #survey-form {
+                background-color: rgba(0, 0, 0, 0.7);
+                padding: 10px;
+                width: 910px;
+                height: 1250px;
+                font-size: 15px;
+            }
+
+            #optional {
+                font-size: 18px;
+            }
+
+            .inputbox {
+                width: 90%;
+                padding: 5px;
+                margin-left: 15px;
+            }
+
+            .label {
+                margin-left: 15px;
+            }
+
+            .input {
+             margin-left: 15px;
+            }
+
+            #comments {
+                width: 90%;
+                height: 100px;
+                resize: none;
+            }
+
+            #submit {
+                width: 90.7%;
+                padding: 5px;
+                margin-left: 15px;
+                height: 70px;
+                background-color: rgb(0, 255, 0);
+                color: white;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body id="main">
+            <!-- TITLE SECTION -->
+  
+            <h1 id="title">Uncharted 4 Multiplayer Survey Form</h1>
+            <p id="description">What are your thoughts on Uncharted 4         Multiplayer?</p>
+  
+            <!-- TITLE SECTION -->
+
+            <!-- FORM SECTION STARTS -->
+  
+            <form id="survey-form">
+
+                <!-- NAME SECTION -->
+                
+                <label id="name-label">
+                <h2 class="label">Name</h2>
+                </label>
+                <input id="name" type="text" placeholder="Enter your name"       class="inputbox" required><br><br>
+                
+                <!-- NAME SECTION -->
+                
+                <!-- EMAIL SECTION -->
+                
+                <label id="email-label">
+                <h2 class="label">Email</h2>
+                </label>
+                <input id="email" type="email" class="inputbox"                   placeholder="Enter your Email" required><br><br>
+                
+                <!-- EMAIL SECTION -->
+                
+                <!-- AGE SECTION -->
+                
+                <label id="number-label">
+                <h2 class="label">Age <span id="optional">(optional)</span>       </h2>
+                </label>
+                <input id="number" class="inputbox" type="number"                 placeholder="Age" min="12" max="99"><br><br>
+                
+                <!-- AGE SECTION -->
+                
+                <!-- EXPERIENCE SECTION -->
+                
+                <h2 class="label">Experience</h2>
+                <select id="dropdown" class="inputbox">
+                <option disabled selected value>Experience</option>
+                <option>Good</option>
+                <option>Decent</option>
+                <option>Bad</option>
+                </select><br><br>
+                
+                <!-- EXPERIENCE SECTION -->
+                
+                <!-- RECOMMEND SECTION -->
+                
+                <h2 class="label">Would you recommend Uncharted 4 Multiplayer     to a friend?</h2>
+                <input type="radio" name="recommendation"                         class="input" value="Yes">Yes<br><br>
+                <input type="radio" name="recommendation"                         class="input" value="No">No<br><br>
+                <input type="radio" name="recommendation"                         class="input" value="Maybe">Maybe<br><br>
+                
+                <!-- RECOMMEND SECTION -->
+                
+                <!-- ADD SECTION -->
+                
+                <h2 class="label">What do you want NaughtyDog to add?</h2>
+                <input type="checkbox" value="Guns" class="input">Guns<br>       <br>
+                <input type="checkbox" value="Balancing"                         class="input">Balancing<br><br>
+                <input type="checkbox" value="Maps" class="input">Maps<br>       <br>
+                <input type="checkbox" value="Skins" class="input">Skins<br>     <br>
+                <input type="checkbox" value="Mods" class="input">Mods<br>       <br>
+                
+                <!-- ADD SECTION -->
+                
+                <!-- ADDITIONAL COMMENTS SECTION -->
+                
+                <h2 class="label">Addition Comments</h2>
+                <textarea id="comments" class="input" placeholder="Enter your comment here..."></textarea>
+                
+                <!-- ADDITIONAL COMMENTS SECTION -->
+                
+                <br><br><br><br><br>
+                <button type="submit" id="submit">SUBMIT</button>
+      
+            </form>
+  
+            <!-- FORM SECTION ENDS -->
+  
+    </body>
+    </html>
